@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-dark-200 text-gray-100 min-h-screen;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg bg-primary hover:bg-primary-hover transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-dark-100 rounded-xl p-6 shadow-lg;
+  }
+}
